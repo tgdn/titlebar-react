@@ -1,6 +1,6 @@
 {
   "name": "titlebar-react",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Emulate OS X window title bar using React.js",
   "main": "index.js",
   "scripts": {
