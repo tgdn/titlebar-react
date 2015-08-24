@@ -10,7 +10,7 @@ See the [live demo](http://kapetan.github.io/titlebar/demo/index.html) (Without 
 var React = require('react');
 var Titlebar = require('titlebar-react');
 
-var Component = React.createClass({
+var Window = React.createClass({
 
     handleClose: function(e) {
         console.log('closing');
@@ -41,6 +41,12 @@ var Component = React.createClass({
         );
     }
 
+});
+
+// then simply add to DOM
+React.render({
+    <Window />,
+    document.body
 });
 
 ```
