@@ -7,25 +7,27 @@ See the [live demo](http://kapetan.github.io/titlebar/demo/index.html) (Without 
 	npm install titlebar-react
 
 ```javascript
-var React = require('react');
-var Titlebar = require('titlebar-react');
+import React from 'react';
+import Titlebar from 'titlebar-react';
 
-var Window = React.createClass({
-
-    handleClose: function(e) {
+class Window extends React.Component {
+    handleClose(e) {
         console.log('closing');
-    },
-    handleMinimize: function(e) {
+    }
+    
+    handleMinimize(e) {
         console.log('minimize');
-    },
-    handleMaximize: function(e) {
+    }
+    
+    handleMaximize(e) {
         console.log('maximize');
-    },
-    handleFullScreen: function(e) {
+    }
+    
+    handleFullScreen(e) {
         console.log('fullscreen');
-    },
+    }
 
-    render: function() {
+    render() {
         return (
             <div className="r-win">
                 <Titlebar
@@ -40,8 +42,7 @@ var Window = React.createClass({
             </div>
         );
     }
-
-});
+}
 
 // then simply add to DOM
 React.render({
